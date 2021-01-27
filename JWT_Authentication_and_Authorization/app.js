@@ -37,6 +37,7 @@ app.post("/login", async (req, res) => {
 });
 
 app.get("/getUser", authenticateJWT, (req, res) => {
+  console.log(req.user);
   res.send("User Fetch is Success");
 });
 
