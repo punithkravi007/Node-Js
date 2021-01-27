@@ -1,9 +1,10 @@
 const express = require("express");
-const jwt = require("jsonwebtoken");
 const bodyParser = require("body-parser");
-const { users } = require("./Service/UserService");
-const accessTokenSecret = "youraccesstokensecret";
 const authenticateJWT = require("./Service/authenticationService");
+const jwt = require("jsonwebtoken");
+const accessTokenSecret = "youraccesstokensecret";
+const users = require("./Service/UserService");
+const dbConfig = require('./Repository/dbConfig');
 const app = express();
 
 app.use(bodyParser.json());
