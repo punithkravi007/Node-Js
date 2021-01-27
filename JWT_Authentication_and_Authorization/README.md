@@ -36,6 +36,9 @@ The header section contains the hashing algorithm, which was used to generate th
 
 # Try out 
 
+1. npm init --save
+2. node app.js
+
 Let's send a post request to the http://localhost:3000/login endpoint with the following JSON:
 
 {
